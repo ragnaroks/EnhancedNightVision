@@ -1,6 +1,6 @@
 {
     "name": "EnhancedNightVision",
-    "version": "3.8.20240525",
+    "version": "3.8.20240531",
     "main": "src/mod.js",
     "license": "MIT",
     "author": "ragnaroks",

@@ -22,20 +22,20 @@ class Mod implements IPostDBLoadMod {
         for (const iterator of itemArray) {
             const item = tables.templates.items[iterator] || null;
             if(!item || item._parent!==parentId){continue;}
-            item._props.NoiseIntensity = 0;
-            item._props.NoiseScale = 0;
+            item._props.NoiseIntensity = 0.0;
+            item._props.NoiseScale = 0.0;
             item._props.Color.r = 150; // 255
             item._props.Color.g = 214; // 255
             item._props.Color.b = 240; // 255
             item._props.Color.a = 254; // 0
             item._props.Intensity = 2;
-            item._props.NoiseScale = 0;
+            item._props.DiffuseIntensity = 0.0;
             item._props.IsNoisy = false;
             item._props.IsMotionBlurred = false;
             item._props.IsFpsStuck = false;
             item._props.IsPixelated = false;
             item._props.IsGlitch = false;
-            item._props.Mask = "Binocular";
+            item._props.Mask = "Anvis";
             item._props.MaskSize = 2;
         }
 
